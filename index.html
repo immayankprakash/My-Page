@@ -45,6 +45,18 @@
     
     <style>
     
+    
+        #footer {
+                 position:fixed;
+                 width:65%;
+                 bottom:0; 
+                 height:auto;
+                 background:black;
+                 }
+
+
+    
+    
         *{
                 margin: 0px;
                 padding: 0px;
@@ -95,6 +107,10 @@
                 font-size: 40px;
         }
         
+        h2 {
+                color: white;
+                text-align: center;
+        }
         
     </style>
     
@@ -104,16 +120,18 @@
 
 <!-- First Grid: Logo & About -->
 <div class="w3-row" id="myPage">
-  <div class="w3-half w3 w3-container w3-center" style="height:300px" id="colorme">
+  <div class="w3-half w3 w3-container w3-center" id="colorme">
     <div class="w3-padding-64">
+        <br> <br>
       <h1 style="color: white">Mayank Prakash Pandey</h1>
       <p style="color:white">PhD in Computational Biophysics @ University of Southern Denmark, Odense, Denmark</p>
       <p style="color:white">(2019-present)</p>
     </div>
   </div>
-  <div class="w3-half w3 w3-container" style="height:400px" id="colorabout">
+  <div class="w3-half w3 w3-container" id="colorabout">
     <div class="w3-padding-64 w3-center">
       <img src="images/pic_modified.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+       <p style="color:white">Computational Biophysics | Machine Learning | Data Analytics | Statistical Analysis | Hypothesis Testing</p>
     </div>
   </div>
 </div>
@@ -121,18 +139,14 @@
 
 <!-- Second Grid: Swing By & Contact -->
 <div class="w3-row" id="contact">
-  <div class="w3-half w3 w3-container" style="height:470px" id="finalcolor">
-    <div class=" w3-center ">
-      <h1>Some of my ML work</h1>
-    </div>
-    <div class="w3-padding-64" style="font-size: 30px">
+  <div class="w3-half w3 w3-container" id="finalcolor">
+     <h2>Some of my ML work</h2> <br>
         <p>1. Drug Discovery: Classification of effectiveness of a drug using Machine Learning <a href="https://github.com/immayankprakash/ML_drug_discovery"> <span style="color: #468BE3">(Check it out!)</span></a></p>
         <p>2. Classification of a gene family based on the dna sequence <a href="https://github.com/immayankprakash/ML_Classifying-DNA-Sequence"><span style="color: #468BE3">(Check it out!)</a></p>
         <p>3. Air pollution forecasting: LSTM vs GRU  <a href="https://github.com/immayankprakash/ML_Air_pollution_forecasting"><span style="color: #468BE3">(Check it out!)</a></p>
 	<p>4. Text classification based on the emotion <a href="https://github.com/immayankprakash/ML_Text_classification"><span style="color: #468BE3">(Check it out!)</a></p>		
-    </div>
   </div>
-  <div class="w3-half w3- w3-container w3-center" style="height:700px" id="changecolor">
+  <div class="w3-half w3- w3-container w3-center" id="changecolor">
     <div class="w3-padding-64 w3-padding-large" >
       <h1>Contact</h1>
         <h3 style="color: red">Email: <a href="mailto:immayankprakash@gmail.com">immayankprakash@gmail.com</a><h3>
@@ -142,8 +156,12 @@
   </div>
 </div>
 
+
 <!-- Footer -->
+
+
 <footer class="container-fluid text-center">
+<div id="footer">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
